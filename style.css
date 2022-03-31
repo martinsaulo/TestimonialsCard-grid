@@ -1,0 +1,123 @@
+:root{
+    --violet: hsl(263, 55%, 52%);
+    --grayish-blue: hsl(217, 19%, 35%);
+    --blackish-blue: hsl(219, 29%, 14%);
+    --light-gray: hsl(0, 0%, 81%);
+    --white: hsl(0, 0%, 100%);
+    --light-blue: hsl(210, 46%, 95%);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.3rem;
+    background-color: var(--light-gray);
+    font-weight: 500;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.2;
+    margin: 0;
+}
+h3{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    border-radius: 100%;
+    border: 3px solid var(--light-gray);
+}
+/**Utilidades**/
+.contenedor{
+    max-width: 1400px;
+    width: 95%;
+    margin:  auto;
+} 
+@media (min-width: 980px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 4rem;
+    }
+}
+.light-font{
+    color: var(--light-blue);
+}
+.dark-font{
+    color: var(--grayish-blue);
+}
+.border-violet{
+    border-color: hsl(263, 48%, 64%);
+}
+/**Text**/
+blockquote{
+    margin: 0;
+}
+.testimonials{
+    font-weight: 600;
+    margin: 3rem 0;
+    font-size: 2.2rem;
+}
+.testimonials-extended{
+    opacity: 70%;
+    font-size: 1.5rem;
+}
+span{
+    opacity: 50%;
+}
+/**Card**/
+.card{
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.7);
+    box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.7);
+    padding: 4rem;
+    margin: 1rem 0;
+}
+.card-header{
+    display: grid;
+    grid-template-columns: 56px calc(100% - 56px);
+    align-items: center;
+    column-gap: 1rem;
+}
+@media (min-width: 980px) {
+    .card{
+        margin: 0;
+    }
+}
+.card-daniel{
+    background-color: var(--violet);
+}
+@media (min-width: 980px) {
+    .card-daniel{
+        grid-column: 1/3;
+    }
+}
+.card-jonathan{
+    background-color: var(--grayish-blue);
+}
+.card-patrick{ 
+    background-color: var(--blackish-blue);
+}
+@media (min-width: 980px) {
+    .card-patrick{
+        grid-column: 2/4;
+    }
+}
+.card-kira, .card-jeanatte{
+    background-color: var(--white);
+}
+@media (min-width: 980px) {
+    .card-kira{
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+}
+/** Centrar **/
+.contenido{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
