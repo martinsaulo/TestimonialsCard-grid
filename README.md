@@ -17,8 +17,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/testimonials-card-grid-r1H5ss7mc)
+- Live Site URL: [Live site URL](https://testimonialscard-grid.netlify.app/)
 
 ### Built with
 
